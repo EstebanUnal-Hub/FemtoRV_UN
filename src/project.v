@@ -22,9 +22,9 @@ module tt_um_femto (
   assign uio_oe  = 0;
 
   /* verilator lint_off SYNCASYNCNET */
-  reg rst_reg_n;
+  reg resetn;
   /* verilator lint_on SYNCASYNCNET */
-  always @(negedge clk) rst_reg_n <= rst_n;
+  always @(negedge clk) resetn <= rst_n;
 
   femto femto0(
     .clk(clk),
