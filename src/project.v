@@ -45,6 +45,6 @@ module tt_um_femto (
 
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena,uio_in[7:0],ui_in[7:3],word_address[19:16],wdata[31:8], 1'b0};
+  wire _unused = &{ena,uio_in[7:0],ui_in[7:3], 1'b0};
 
 endmodule
