@@ -30,7 +30,10 @@ module MappedSPIRAM(
 
  
  reg [1:0] state;
- reg clk_div;
+/* verilator lint_off UNUSEDSIGNAL */
+reg clk_div;
+/* verilator lint_on UNUSEDSIGNAL */
+
 
 
 

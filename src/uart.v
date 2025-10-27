@@ -61,8 +61,9 @@ end
 reg       rx_busy;
 reg [3:0] rx_count16;
 reg [3:0] rx_bitcount;
+/* verilator lint_off UNUSEDSIGNAL */
 reg [9:0] rxd_reg;
-
+/* verilator lint_on UNUSEDSIGNAL */
 always @ (posedge clk)
 begin
 	if (reset) begin
