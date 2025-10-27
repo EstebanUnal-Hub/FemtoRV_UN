@@ -4,10 +4,13 @@ module MappedSPIRAM(
     input wire 	        clk,           // system clock
     input wire          reset,         // system reset
     input wire 	        rd,         // read strobe
-    input wire          wr,         // write strobe		
+    input wire          wr,         // write strobe	
+    /* verilator lint_off UNUSEDSIGNAL */	
     input wire [19:0]   word_address,  // address of the word to be read
-
+    /* verilator lint_on UNUSEDSIGNAL */
+    /* verilator lint_off UNUSEDSIGNAL */
     input wire [31:0]   wdata,         // data to be written
+    /* verilator lint_on UNUSEDSIGNAL */
     output wire [31:0]  rdata,         // data read
     output reg          rbusy,        // asserted if busy receiving data
     output reg          wbusy,         // asserted if busy writing data		    
